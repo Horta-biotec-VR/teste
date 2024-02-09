@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos Circulares</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+        }
+
+        .circle {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            max-width: 200px; /* Adicionado para limitar o tamanho máximo */
+            max-height: 200px; /* Adicionado para limitar o tamanho máximo */
+            margin: 10px;
+            object-fit: cover;
+            border: 2px solid #f1770a;
+        }
+
+        figure {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .caption {
+            text-align: center;
+            position: absolute;
+            bottom: 1;
+            left: 0;
+            right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .circle {
+                width: 100%;
+                height: auto;
+            }
+
+            figure {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Regras Gerais </h1>
+    <div>
+        <figure>
+            <img src="fala.png" alt="Foto 1" class="circle">
+            <figcaption class="caption">Legenda da Foto 1</figcaption>
+        </figure>
+        <figure>
+            <img src="grupo.png" alt="Foto 2" class="circle">
+            <figcaption class="caption">Legenda da Foto 2</figcaption>
+        </figure>
+        <figure>
+            <img src="video-icon.png" alt="Foto 3" class="circle">
+            <figcaption class="caption">Legenda da Foto 3</figcaption>
+        </figure>
+        <figure>
+            <img src="foto4.jpg" alt="Foto 4" class="circle">
+            <figcaption class="caption">Legenda da Foto 4</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
